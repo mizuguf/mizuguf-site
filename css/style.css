@@ -1,0 +1,377 @@
+/* ========================================
+   Feel Good Balance - Shared Styles
+   ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN',
+               'Noto Sans JP', 'Yu Gothic', sans-serif;
+  background-color: #FFF5E6;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+a {
+  color: #F5A623;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========== Header ========== */
+.site-header {
+  background-image: url('../images/header-bg.jpg');
+  background-color: #B06820; /* header-bg.jpg がない場合のフォールバック */
+  background-size: cover;
+  background-position: center top;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-title {
+  color: #F5A623;
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+/* ========== Navigation ========== */
+.site-nav {
+  background-color: #F5A623;
+  display: flex;
+  justify-content: center;
+}
+
+.site-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 40px;
+  display: inline-block;
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+/* ========== Content wrapper ========== */
+.content-wrapper {
+  max-width: 860px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* ========== Card ========== */
+.card {
+  background: white;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.card-title-bar {
+  background-color: #F5A623;
+  padding: 12px 24px;
+}
+
+.card-title-bar h2 {
+  color: white;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 24px 30px 36px;
+}
+
+/* ========== Article title (orange + underline) ========== */
+.article-title {
+  color: #F5A623;
+  font-size: 1.05rem;
+  font-weight: bold;
+  border-bottom: 2px solid #F5A623;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+  margin-top: 10px;
+}
+
+/* ========== Screenshots ========== */
+.screenshot {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+
+/* ========== Store badges ========== */
+.store-badges {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.store-badges img {
+  height: 44px;
+  width: auto;
+}
+
+/* ========== Paragraph ========== */
+.card-body p {
+  margin-bottom: 14px;
+}
+
+.text-highlight {
+  background: linear-gradient(transparent 55%, rgba(255, 200, 50, 0.45) 55%);
+}
+
+/* ========== Feature lists ========== */
+.feature-section {
+  margin: 20px 0;
+}
+
+.feature-section h4 {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.feature-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-section ul li {
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.feature-section ul li::before {
+  content: "・";
+}
+
+.note {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* ========== App list (apps.html) ========== */
+.app-list-item {
+  display: flex;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #F0E0D0;
+}
+
+.app-list-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.app-icon-wrap {
+  flex-shrink: 0;
+}
+
+.app-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 22px;
+  object-fit: cover;
+  background-color: #F0E0D0; /* 画像がない場合のフォールバック */
+}
+
+.app-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-info h3 {
+  color: #F5A623;
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #F5A623;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+/* ========== About ========== */
+.about-body p {
+  margin-bottom: 20px;
+}
+
+/* ========== Contact form ========== */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: white;
+}
+
+.form-group textarea {
+  height: 180px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #F5A623;
+  box-shadow: 0 0 0 2px rgba(245, 166, 35, 0.2);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.submit-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* ========== Privacy policy ========== */
+.privacy-body h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 24px 0 8px;
+  color: #333;
+}
+
+.privacy-body p {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.privacy-body ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.privacy-body ul li {
+  padding-left: 1em;
+  text-indent: -1em;
+  font-size: 0.95rem;
+}
+
+.privacy-body ul li::before {
+  content: "・";
+}
+
+/* ========== Footer ========== */
+.site-footer {
+  background-color: #333;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-brand {
+  color: white;
+  font-size: 0.95rem;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-nav a {
+  color: white;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 640px) {
+  .site-header {
+    height: 140px;
+  }
+
+  .site-title {
+    font-size: 1.4rem;
+  }
+
+  .site-nav a {
+    padding: 12px 16px;
+    font-size: 0.85rem;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .app-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    align-items: center;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
